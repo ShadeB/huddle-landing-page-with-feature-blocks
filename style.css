@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+html {
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8rem;
+	line-height: 1.3;
+	font-weight: 400;
+	color: hsl(208, 11%, 55%);
+	background-color: #fff;
+}
+
+button {
+	border: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+h1,
+h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	margin: 3rem 0;
+	color: hsl(192, 100%, 9%);
+	text-transform: capitalize;
+}
+
+.layout {
+	padding: 2rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+header {
+	background-color: hsl(193, 100%, 96%);
+}
+
+.site-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: -10rem;
+	background-color: hsl(193, 100%, 96%);
+}
+
+.logo {
+	width: 12rem;
+}
+
+.cta__tryit {
+	background-color: #fff;
+	color: hsl(192, 100%, 9%);
+	box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.6);
+	padding: 1rem 2rem;
+	border-radius: 5rem;
+	font-weight: 600;
+}
+
+.hero__section {
+	background-image: url(./images/bg-hero-mobile.svg);
+	background-size: cover;
+	background-position: center;
+	background-color: hsl(193, 100%, 96%);
+}
+
+.hero {
+	color: hsl(192, 100%, 9%);
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.hero__heading {
+	font-size: 3rem;
+	margin-top: 10rem;
+}
+
+.hero__cta {
+	margin: 4rem 0;
+}
+
+.cta__get-started {
+	background-color: hsl(322, 100%, 66%);
+	box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.6);
+	padding: 1.5rem 7.5rem;
+	margin-bottom: 2rem;
+	border-radius: 5rem;
+	color: #fff;
+	font-weight: 700;
+}
+
+.showcase {
+	text-align: center;
+	font-size: 1.6rem;
+}
+
+.showcase__card {
+	padding: 2.3rem;
+	box-shadow: 1px 1px 5px -2px rgba(0, 0, 0, 0.6);
+	border-radius: 2rem;
+	margin: 3rem 0;
+}
+
+.showcase__card--cta {
+	background-color: #fff;
+	display: inline-block;
+	position: relative;
+	margin-bottom: -8rem;
+	z-index: 1;
+}
+
+.showcase__small-heading {
+	font-size: 1.8rem;
+}
+
+footer {
+	margin-top: -3.5rem;
+	background-color: hsl(192, 100%, 9%);
+}
+
+footer .container {
+	padding-top: 10rem;
+}
+
+.footer__logo {
+	margin: 2rem 0;
+	width: 15rem;
+}
+
+.footer__content {
+	color: #fff;
+}
+
+.contact {
+	display: grid;
+	grid-template-columns: 3rem 1fr;
+	margin: 2rem 0;
+	gap: 0.5rem;
+}
+
+.location__icon {
+	margin-top: 1rem;
+}
+
+.footer__link {
+	margin: 2rem 0;
+}
+
+.social-icons-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3rem 0;
+}
+
+.social-icons-container li {
+	width: 4rem;
+	height: 4rem;
+	border: solid #fff 0.1rem;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons-container li:not(:first-child) {
+	margin-left: 1rem;
+}
+
+.fab {
+	padding: 1rem;
+	color: #fff;
+	margin: 1rem;
+	font-size: 2.5rem;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.site__disclaimer {
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	.footer__content-group {
+		display: grid;
+		grid-template-columns: 2fr repeat(3, 1fr);
+		gap: 8rem;
+	}
+
+	.social-icons-container {
+		padding: 2rem 0;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	.site__disclaimer {
+		text-align: right;
+	}
+}
+
+@media (min-width: 960px) {
+	.layout {
+		padding: 4rem;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 40% 60%;
+	}
+
+	.hero :first-child {
+		text-align: left;
+	}
+
+	.hero > :nth-child(2) {
+		padding-top: 10rem;
+	}
+
+	.showcase__card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.showcase__card--cta {
+		display: inline-block;
+		width: 60%;
+	}
+
+	.row-reverse {
+		flex-direction: row-reverse;
+	}
+
+	.showcase__callout {
+		text-align: left;
+		padding: 7rem;
+	}
+}
